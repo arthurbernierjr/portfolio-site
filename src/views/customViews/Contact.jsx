@@ -34,7 +34,7 @@ const CustomSkinMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap
       defaultZoom={14}
-      defaultCenter={{ lat: 44.43353, lng: 26.093928 }}
+      defaultCenter={{ lat: 33.4473, lng: -84.1469 }}
       defaultOptions={{
         scrollwheel: false,
         zoomControl: true,
@@ -100,7 +100,7 @@ const CustomSkinMap = withScriptjs(
         ]
       }}
     >
-      <Marker position={{ lat: 44.43353, lng: 26.093928 }} />
+      <Marker position={{ lat: 33.4473, lng: -84.1469 }} />
     </GoogleMap>
   ))
 );
@@ -122,7 +122,7 @@ class ContactUsPage extends React.Component {
         />
         <div className={classes.bigMap}>
           <CustomSkinMap
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW1GYApFIPA65NwJG_Lg7ePftgDN51Sgs"
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={
               <div
@@ -139,12 +139,12 @@ class ContactUsPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.contactContent}>
             <div className={classes.container}>
-              <h2 className={classes.title}>Send us a message</h2>
+              <h2 className={classes.title}>Send me a message</h2>
               <GridContainer>
                 <GridItem md={6} sm={6}>
                   <p>
-                    You can contact us with anything related to our Products.
-                    We'll get in touch with you as soon as possible.
+                    You can contact me with anything related to web development.
+                    I'll get in touch with you as soon as possible.
                     <br />
                     <br />
                   </p>
@@ -191,11 +191,10 @@ class ContactUsPage extends React.Component {
                 <GridItem md={4} sm={4} className={classes.mlAuto}>
                   <InfoArea
                     className={classes.info}
-                    title="Find us at the office"
+                    title="Find me at the office"
                     description={
                       <p>
-                        Bld Mihail Kogalniceanu, nr. 8, <br /> 7652 Bucharest,{" "}
-                        <br /> Romania
+                        1775 Parker Road Building C Suite 210<br /> Conyers, GA,{" "} 30094
                       </p>
                     }
                     icon={PinDrop}
@@ -203,11 +202,11 @@ class ContactUsPage extends React.Component {
                   />
                   <InfoArea
                     className={classes.info}
-                    title="Give us a ring"
+                    title="Give me a ring"
                     description={
                       <p>
-                        Michael Jordan <br /> +40 762 321 762 <br /> Mon - Fri,
-                        8:00-22:00
+                        Arthur Bernier Jr <br /> (470) 778-1034 <br /> Mon - Fri,
+                        10:30am-5:30pm EST
                       </p>
                     }
                     icon={Phone}
@@ -215,11 +214,10 @@ class ContactUsPage extends React.Component {
                   />
                   <InfoArea
                     className={classes.info}
-                    title="Legal Information"
+                    title="Email me at"
                     description={
                       <p>
-                        Creative Tim Ltd. <br /> VAT · EN2341241 <br /> IBAN ·
-                        EN8732ENGB2300099123 <br /> Bank · Great Britain Bank
+                        <a href="mailto:arthurbernier@protonmail.com"> ArthurBernier@ProtonMail.com</a>
                       </p>
                     }
                     icon={BusinessCenter}
