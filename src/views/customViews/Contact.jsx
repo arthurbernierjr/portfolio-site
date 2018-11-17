@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import API from "config.js"
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components used to create a google map
@@ -122,7 +123,7 @@ class ContactUsPage extends React.Component {
         />
         <div className={classes.bigMap}>
           <CustomSkinMap
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW1GYApFIPA65NwJG_Lg7ePftgDN51Sgs"
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${API}`}
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={
               <div
