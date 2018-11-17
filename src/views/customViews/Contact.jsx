@@ -1,6 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom"
-import API from "config.js"
+import {Link} from "react-router-dom";
+import API from "config.js";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components used to create a google map

@@ -25,6 +25,18 @@ import Badge from "components/Badge/Badge.jsx";
 
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/projectsStyle.jsx";
 
+import yourpublishedbook from "assets/img/portfolio/yourpublishedbook.jpeg";
+import chakrawelness from "assets/img/portfolio/trudy.png";
+import bellaprinting from "assets/img/portfolio/bellaprinting.jpeg";
+import changingtheworld from "assets/img/portfolio/changingtheworld.png";
+import datzdem from "assets/img/portfolio/datzdem.jpeg";
+import eatsmac from "assets/img/portfolio/eatsmac.jpeg";
+import kecia from "assets/img/portfolio/kecia.jpeg";
+import osbn from "assets/img/portfolio/osbn.jpg";
+import proroofing from "assets/img/portfolio/proroofing.PNG";
+import rickandmorty from "assets/img/portfolio/rickandmorty.jpeg";
+import taralees2cents from "assets/img/portfolio/taralees2cents.PNG";
+import taraleesrecipes from "assets/img/portfolio/taraleesrecipes.png";
 import office2 from "assets/img/examples/office2.jpg";
 import cardBlog3 from "assets/img/examples/card-blog3.jpg";
 import cardProject1 from "assets/img/examples/card-project1.jpg";
@@ -51,15 +63,13 @@ function SectionProjects({ ...props }) {
               }`}
             >
               <Muted>
-                <h6>OUR WORK</h6>
+                <h6>My WORK</h6>
               </Muted>
               <h2 className={classes.title}>
-                Some of Our Awesome Products - 2
+                Some of My Awesome Projects
               </h2>
               <h5 className={classes.description}>
-                This is the paragraph where you can write more details about
-                your projects. Keep you user engaged by providing meaningful
-                information.
+                These are projects that I worked on as the primary developer or school projects that I created on...
               </h5>
               <div className={classes.sectionSpace} />
             </GridItem>
@@ -68,13 +78,13 @@ function SectionProjects({ ...props }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/material-kit-react"
+                  href="http://www.ChakraWellnessCoach.com"
                   target="_blank"
                 >
                   <CardHeader image plain>
                     <img
                       src={
-                        "https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg?1525851474"
+                        chakrawelness
                       }
                       alt="..."
                     />
@@ -82,7 +92,7 @@ function SectionProjects({ ...props }) {
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
-                          "url('https://s3.amazonaws.com/creativetim_bucket/products/83/original/opt_mk_react_thumbnail.jpg?1525851474')",
+                          `url('${chakrawelness}')`,
                         opacity: "1"
                       }}
                     />
@@ -90,21 +100,18 @@ function SectionProjects({ ...props }) {
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/material-kit-react"
+                    href="http://www.ChakraWellnessCoach.com"
                     target="_blank"
                   >
                     <h4 className={classes.cardTitle}>
-                      Material Kit Free React
+                      Chakra Wellness Coach
                     </h4>
                   </a>
-                  <h6 className={classes.description}>FREE UI KIT</h6>
+                  <h6 className={classes.description}>Author Website</h6>
                   <p
                     className={`${classes.description} ${classes.marginTop20}`}
                   >
-                    Material Kit is a Free Material-UI Kit with a fresh, new
-                    design inspired by Google's material design. It's a great
-                    pleasure to introduce to you the material concepts in an
-                    easy to use and beautiful set of components.
+                    Chakra Welness Coach is designed with React, Built on Material Design and deployed via Heroku and makes use of JSS and the GoogleMap Api, PayPal and PHP scripting for contact form.
                   </p>
                 </CardBody>
               </Card>
@@ -112,19 +119,19 @@ function SectionProjects({ ...props }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
+                  href="http://bellaprintingllc.com"
                   target="_blank"
                 >
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbdp_react_thumbnail.jpg?1509466309"
+                      src={bellaprinting}
                       alt="..."
                     />
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
-                          "url('https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbdp_react_thumbnail.jpg?1509466309')",
+                          `url('${bellaprinting}')`,
                         opacity: "1"
                       }}
                     />
@@ -132,21 +139,18 @@ function SectionProjects({ ...props }) {
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react"
+                    href="http://bellaprintingllc.com"
                     target="_blank"
                   >
                     <h4 className={classes.cardTitle}>
-                      Light Bootstrap Dashboard PRO React
+                      Bella Printing
                     </h4>
                   </a>
-                  <h6 className={classes.description}>Premium Template</h6>
+                  <h6 className={classes.description}>Custom WordPress</h6>
                   <p
                     className={`${classes.description} ${classes.marginTop20}`}
                   >
-                    Light Bootstrap Dashboard PRO is a Bootstrap 3 Admin Theme
-                    designed to look simple and beautiful. Forget about boring
-                    dashboards and grab yourself a copy to kickstart new
-                    project!
+                    Bella Printing is built on Wordpress utilizing a custom theme built with Bootstrap.
                   </p>
                 </CardBody>
               </Card>
@@ -154,19 +158,19 @@ function SectionProjects({ ...props }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <a
-                  href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
+                  href="http://www.changingthe.world"
                   target="_blank"
                 >
                   <CardHeader image plain>
                     <img
-                      src="https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306"
+                      src={changingtheworld}
                       alt="..."
                     />
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
-                          "url('https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306')",
+                          `url('${changingtheworld}')`,
                         opacity: "1"
                       }}
                     />
@@ -174,21 +178,382 @@ function SectionProjects({ ...props }) {
                 </a>
                 <CardBody plain>
                   <a
-                    href="https://www.creative-tim.com/product/now-ui-dashboard-pro-react"
+                    href="http://changingthe.world"
                     target="_blank"
                   >
                     <h4 className={classes.cardTitle}>
-                      Now UI Dashboard PRO React
+                      Changing The World
                     </h4>
                   </a>
-                  <h6 className={classes.description}>Premium Template</h6>
+                  <h6 className={classes.description}>School Project</h6>
                   <p
                     className={`${classes.description} ${classes.marginTop20}`}
                   >
-                    Now UI Dashboard React is an admin dashboard template
-                    designed by Invision and coded by Creative Tim. It is built
-                    on top of Reactstrap, using Now UI Dashboard and it is fully
-                    responsive.
+                    It is built on top of Bulma, using Bloomer  and it is fully responsive and built with Tyler Gosla and Christian Von Lehe.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+          </GridContainer>
+          <GridContainer>
+          <GridItem xs={12} sm={4} md={4}>
+            <Card plain className={classes.card2}>
+              <a
+                href="https://vast-refuge-11048.herokuapp.com/"
+                target="_blank"
+              >
+                <CardHeader image plain>
+                  <img
+                    src={eatsmac}
+                    alt="..."
+                  />
+                  <div
+                    className={classes.coloredShadow}
+                    style={{
+                      backgroundImage:
+                        `url('${eatsmac}')`,
+                      opacity: "1"
+                    }}
+                  />
+                </CardHeader>
+              </a>
+              <CardBody plain>
+                <a
+                  href="https://vast-refuge-11048.herokuapp.com/"
+                  target="_blank"
+                >
+                  <h4 className={classes.cardTitle}>
+                    Eat Smac
+                  </h4>
+                </a>
+                <h6 className={classes.description}>School Project</h6>
+                <p
+                  className={`${classes.description} ${classes.marginTop20}`}
+                >
+                  Custom Group Project in school where I was tasked with the front end development. This is a Full Stack MERN Application. I used REACT and Material Design to design the UI. We integrated with UX Designers using Invision, Trello and Zeplin.
+                </p>
+              </CardBody>
+            </Card>
+          </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="http://datzdem.com"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={
+                        datzdem
+                      }
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${datzdem}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="http://www.datzdem.com"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Datz Dem
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Music Artist Website</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                  Wordpress Theme built on top of storefront with Bootstrap and integrated with WooCommerce.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="http://kecianichelle.com"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={kecia}
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${kecia}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="http://kecianichelle.com"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Kecia Nichelle
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Local Hair Stylist</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    Used Bootstrap and JQuery +Vanilla Javascript to create a simple but well designed professional website for a local hairstylist with a large following.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+          </GridContainer>
+          <GridContainer>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="https://pages.git.generalassemb.ly/arthurbernierjr/rickandmortyadv/"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={
+                        rickandmorty
+                      }
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${rickandmorty}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="https://pages.git.generalassemb.ly/arthurbernierjr/rickandmortyadv/"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Rick and Morty Adventure Game
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Browser Game</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    Cool just for fun browser game. This one uses only vanilla Javascript. I have others as well like tic tac toe, matching games, card games, rpg games etc. but I didn't want to riddle my portfolio with games.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="https://web.archive.org/web/20140417055546/http://www.taraleestwocents.com:80/"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={taralees2cents}
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${taralees2cents}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="https://web.archive.org/web/20140417055546/http://www.taraleestwocents.com:80/"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Taralees 2 Cents
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Custom WordPress</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    Taralees2cents is built on Wordpress utilizing a custom theme built on Optimize Press. I learned to do this from emulating WordpressMakeover and this was my first real full website built in 2013.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="https://taralees-recipes.herokuapp.com/#/"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={taraleesrecipes}
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${taraleesrecipes}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="https://taralees-recipes.herokuapp.com/#/"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Taralees Recipes
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Vue Js Youtube App</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                  This is site is built using Vue, Vuejs, Vue Router and Cosmic js a headless CMS, and Express.js.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+          </GridContainer>
+          <GridContainer>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="http://yourpublishedbook.com"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={
+                        yourpublishedbook
+                      }
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${yourpublishedbook}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="http://yourpublishedbook.com"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      YourPublishedBook.com
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Sales Funnel</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    A complete Sales Funnel built with HTML, CSS, Javascript and SASS with Bootstrap.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="http://proroofing.us"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={proroofing}
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${proroofing}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="http://proroofing.us"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Pro Roofing
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Custom WordPress</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    Pro Roofing is built on Wordpress utilizing a custom theme built with Bootstrap.
+                  </p>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4}>
+              <Card plain className={classes.card2}>
+                <a
+                  href="https://susanne-mockup.firebaseapp.com/#"
+                  target="_blank"
+                >
+                  <CardHeader image plain>
+                    <img
+                      src={osbn}
+                      alt="..."
+                    />
+                    <div
+                      className={classes.coloredShadow}
+                      style={{
+                        backgroundImage:
+                          `url('${osbn}')`,
+                        opacity: "1"
+                      }}
+                    />
+                  </CardHeader>
+                </a>
+                <CardBody plain>
+                  <a
+                    href="https://susanne-mockup.firebaseapp.com/#"
+                    target="_blank"
+                  >
+                    <h4 className={classes.cardTitle}>
+                      Open Barter Network
+                    </h4>
+                  </a>
+                  <h6 className={classes.description}>Complete Site</h6>
+                  <p
+                    className={`${classes.description} ${classes.marginTop20}`}
+                  >
+                    Very Complicated Site Utilizing Multiple lanaguages and technologies currently under development. CSS, SASS, GULP, REACT, Wordpress, BuddyPress, Forum Technology, Search Engine Optimization Best Practices all utilized.
                   </p>
                 </CardBody>
               </Card>

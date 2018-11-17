@@ -19,9 +19,12 @@ import Warning from "components/Typography/Warning.jsx";
 import testimonialsStyle from "assets/jss/material-kit-pro-react/views/sectionsSections/testimonialsStyle.jsx";
 
 import dg2 from "assets/img/dg2.jpg";
-import cardProfile1Square from "assets/img/faces/card-profile1-square.jpg";
+import danny from "assets/img/portfolio/danny.jpeg";
+import evan from "assets/img/portfolio/evan.jpeg";
+import tyler from "assets/img/portfolio/tyler.jpeg";
+import cardProfile1Square from "assets/img/portfolio/girdle.jpg";
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
-import cardProfile4Square from "assets/img/faces/card-profile4-square.jpg";
+import cardProfile4Square from "assets/img/portfolio/brucebrown.jpg";
 import cardProfile6Square from "assets/img/faces/card-profile6-square.jpg";
 import kendall from "assets/img/faces/kendall.jpg";
 import christian from "assets/img/faces/christian.jpg";
@@ -39,98 +42,7 @@ function SectionTestimonials({ ...props }) {
   return (
     <div className="cd-section" {...rest}>
       {/*  Evan, Daniel, Daniel and Tyler */}
-      <div
-        className={`${classes.testimonials} ${classes.sectionDark} ${
-          classes.testimonial2
-        }`}
-      >
         <div className={classes.container}>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={12}>
-              <Carousel {...settings}>
-                <div>
-                  <Card testimonial plain className={classes.card2}>
-                    <CardAvatar testimonial plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={kendall} alt="..." />
-                      </a>
-                    </CardAvatar>
-                    <CardBody plain>
-                      <h5 className={classes.cardDescription}>
-                        "I speak yell scream directly at the old guard on behalf
-                        of the future. I gotta say at that time I’d like to meet
-                        Kanye I speak yell scream directly at the old guard on
-                        behalf of the future. My brother Chance!!!<br />Thank
-                        you for letting me work on this masterpiece. One of my
-                        favorite people."
-                      </h5>
-                      <h4 className={classes.cardTitle}>Kendall Thompson</h4>
-                      <Muted>
-                        <h6>CEO @ Marketing Digital Ltd.</h6>
-                      </Muted>
-                    </CardBody>
-                    <div>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                    </div>
-                  </Card>
-                </div>
-                <div>
-                  <Card testimonial plain className={classes.card2}>
-                    <CardAvatar testimonial plain>
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img src={christian} alt="..." />
-                      </a>
-                    </CardAvatar>
-                    <CardBody plain>
-                      <h5 className={classes.cardDescription}>
-                        "Thank you Anna for the invite thank you to the whole
-                        Vogue team Called I Miss the Old Kanye At the God's last
-                        game Chop up the soul Kanye. I promise I will never let
-                        the people down. I want a better life for all!!! Pablo
-                        Pablo Pablo Pablo! Thank you Anna for the invite thank
-                        you to the whole Vogue team."
-                      </h5>
-                      <h4 className={classes.cardTitle}>Christian Louboutin</h4>
-                      <Muted>
-                        <h6>Designer @ Louboutin & Co.</h6>
-                      </Muted>
-                    </CardBody>
-                    <div>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                      <Warning>
-                        <Star className={classes.starIcons} />
-                      </Warning>
-                    </div>
-                  </Card>
-                </div>
-              </Carousel>
-            </GridItem>
-          </GridContainer>
-        </div>
-      </div>
-      {/* Testimonials 2 END */}
       {/* Use Datz Dem and Daniel Girdle as a Testimonial Change to md{6} */}
       <div className={classes.testimonials}>
         <div className={classes.container}>
@@ -143,11 +55,48 @@ function SectionTestimonials({ ...props }) {
                 classes.textCenter
               }`}
             >
-              <h2 className={classes.title}>What Clients Say</h2>
+              <h2 className={classes.title}>What People Are Saying...</h2>
             </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={4} md={4}>
+
+            {/* <GridItem xs={12} sm={4} md={4}>
+            //   <Card testimonial plain>
+            //     <CardAvatar testimonial plain>
+            //       <a href="#pablo" onClick={e => e.preventDefault()}>
+            //         <img src={cardProfile4Square} alt="..." />
+            //       </a>
+            //     </CardAvatar>
+            //     <CardBody plain>
+            //       <h4 className={classes.title}>Bruce Brown</h4>
+            //       <Muted>
+            //         <h6>Published Author & Author Coach</h6>
+            //       </Muted>
+            //       <h5 className={classes.cardDescription}>
+            //         "Wow. You are to web development what I am to marketing."
+            //       </h5>
+            //     </CardBody>
+            //   </Card>
+            </GridItem> */}
+            <GridItem xs={12} sm={3} md={3}>
+              <Card testimonial plain>
+                <CardAvatar testimonial plain>
+                  <a href="#pablo" onClick={e => e.preventDefault()}>
+                    <img src={evan} alt="..." />
+                  </a>
+                </CardAvatar>
+                <CardBody plain>
+                  <h4 className={classes.title}>Evan Lane</h4>
+                  <Muted>
+                    <h6>Full Stack Web Developer & Musician</h6>
+                  </Muted>
+                  <h5 className={classes.cardDescription}>
+                    "Arthur is exceptionally friendly, knowledgable, and community-oriented. He is a driven worker who I feel especially fortunate to have studied with at General Assembly. Not only did Arthur excel in the immersive web development program, but he managed his time so well that he successfully completed freelance projects during the course and always made himself available to help others with their coursework. Just being around Arthur has inspired me to dig deeper in my own work."
+                  </h5>
+                </CardBody>
+              </Card>
+            </GridItem>
+            <GridItem xs={12} sm={3} md={3}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -155,66 +104,60 @@ function SectionTestimonials({ ...props }) {
                   </a>
                 </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Mike Andrew</h4>
+                  <h4 className={classes.title}>Daniel Girdle</h4>
                   <Muted>
-                    <h6>CEO @ MARKETING DIGITAL LTD.</h6>
+                    <h6>Entrepreneur @ Millennial Business Owner Group</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I speak yell scream directly at the old guard on behalf of
-                    the future. I gotta say at that time I’d like to meet Kanye
-                    I speak yell scream directly at the old guard on behalf of
-                    the future."
+                    "I bought this gig because I needed an attractive website and Arthur delivered exactly what I needed. It’s rare you find someone who can take your idea to the next level but I promise if you trust this freelancer with your ideas he can develop what you need. "
                   </h5>
                 </CardBody>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
+            <GridItem xs={12} sm={3} md={3}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile4Square} alt="..." />
+                    <img src={tyler} alt="..." />
                   </a>
                 </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Tina Thompson</h4>
+                  <h4 className={classes.title}>Tyler Gosla</h4>
                   <Muted>
-                    <h6>MARKETING @ APPLE INC.</h6>
+                    <h6>Project Manager & Military Veteran</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I promise I will never let the people down. I want a better
-                    life for all!!! Pablo Pablo Pablo Pablo! Thank you Anna for
-                    the invite thank you to the whole Vogue team It wasn’t any
-                    Kanyes I love Rick Owens’ bed design but the back is too
-                    high for the beams and angle of the ceiling"
+                    "Working with Arthur will humble a person. He doesn’t showboat his quick whit or his ability to learn on the fly and he makes you wonder if he ever looses his patience. He can wear many hats and wears them well. Words can’t describe how impressive of a person Arthur is, but you’ll understand this recommendation when you get the chance to work with him."
                   </h5>
                 </CardBody>
               </Card>
             </GridItem>
-            <GridItem xs={12} sm={4} md={4}>
+            <GridItem xs={12} sm={3} md={3}>
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    <img src={cardProfile6Square} alt="..." />
+                    <img src={danny} alt="..." />
                   </a>
                 </CardAvatar>
                 <CardBody plain>
-                  <h4 className={classes.title}>Gina West</h4>
+                  <h4 className={classes.title}>Daniel McKinney</h4>
                   <Muted>
-                    <h6>CFO @ APPLE INC.</h6>
+                    <h6>Full Stack Web Developer & Sound Designer</h6>
                   </Muted>
                   <h5 className={classes.cardDescription}>
-                    "I've been trying to figure out the bed design for the
-                    master bedroom at our Hidden Hills compound... Royère
-                    doesn't make a Polar bear bed but the Polar bear. This is a
-                    very nice testimonial about this company."
+                    "Arthur is a fantastic programmer and his energy lights up the room when he shows up. I was fortunate enough to work with him on a couple of group projects while at General Assembly, his work was always well thought out and executed. And he is always looking to push himself and his skills to the next level.
+
+His skills as a manager and helping a group stay on task are extremely effective. Arthur approaches this task not by micromanaging, but by being an open communicator, positive influence, and leading by example. His presence in the classroom at GA surely elevated my skills and attitude about the craft of programming, and my experience would not have been the same without him there."
                   </h5>
                 </CardBody>
               </Card>
             </GridItem>
+
           </GridContainer>
         </div>
       </div>
       {/* Testimonials 3 END */}
+    </div>
     </div>
   );
 }
