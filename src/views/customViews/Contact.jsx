@@ -28,6 +28,7 @@ import InfoArea from "components/InfoArea/InfoArea.jsx";
 import CustomInput from "components/CustomInput/CustomInput.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Footer from "components/Footer/Footer.jsx";
+import Card from "components/Card/Card.jsx";
 
 import contactUsStyle from "assets/jss/material-kit-pro-react/views/contactUsStyle.jsx";
 
@@ -106,6 +107,14 @@ const CustomSkinMap = withScriptjs(
   ))
 );
 
+const formStyle = {
+  textAlign:`center`,
+
+}
+const formGroup = {
+  width: `100%`,
+
+}
 class ContactUsPage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -149,45 +158,25 @@ class ContactUsPage extends React.Component {
                     <br />
                     <br />
                   </p>
-                  <form>
-                    <CustomInput
-                      labelText="Your Name"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Email address"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Phone"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                    />
-                    <CustomInput
-                      labelText="Your message"
-                      id="float"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      inputProps={{
-                        multiline: true,
-                        rows: 6
-                      }}
-                    />
-                    <div className={classes.textCenter}>
-                      <Button color="primary" round>
-                        Contact us
-                      </Button>
-                    </div>
-                  </form>
+                  <Card>
+                  <form className="form-group" style={formStyle}role="form" id="contact-form" name="contactform" method="post" action="https://progressandfortune.com/assets/contact-form-handler.php">
+                          <div className="form-group label-floating">
+                              <label className="control-label">Your name</label>
+                              <input style={formGroup} type="text" name="name" className="form-control" /> </div>
+                          <div className="form-group label-floating">
+                              <label className="control-label">Email address</label>
+                              <input style={formGroup}type="email" name="email" className="form-control" /> </div>
+                          <div className="form-group label-floating">
+                              <label className="control-label">Phone</label>
+                              <input type="text" style={formGroup} name="phone" className="form-control" /> </div>
+                          <div className="form-group label-floating">
+                              <label className="control-label">Your message</label>
+                              <textarea name="message" className="form-control"style={formGroup} id="message" rows="6"></textarea>
+                          </div>
+
+                              <Button type="submit" color="primary"> Send Message</Button>
+                      </form>
+                      </Card>
                 </GridItem>
                 <GridItem md={4} sm={4} className={classes.mlAuto}>
                   <InfoArea

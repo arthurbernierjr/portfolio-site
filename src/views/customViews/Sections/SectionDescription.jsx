@@ -26,11 +26,11 @@ function SectionDescription(props) {
         >
         <h1 className={classes.description}>About Me</h1>
           <h4 className={classes.description}>
-            Looking for a creative and knowlegable Web Developer? Search no further, because I am ready for the job. With 8 years of total Web Development experience, nearly 2 years of experience as a full-time freelancer, a proven leader & self starter as a military vet, former Senior Sailor of the Year (highest individual navy award for enlisted service-member), Presidential Service Award recipient, and sought after trainer, I can make an immediate impact on any team anywhere.
+            Looking for a creative and knowledgable Web Developer? Search no further, because I am ready for the job. With 8 years of total Web Development experience, nearly 2 years of experience as a full-time freelancer, a proven leader & self starter as a military vet, former Senior Sailor of the Year (highest individual navy award for enlisted service-member), Presidential Service Award recipient, and sought after trainer, I can make an immediate impact on any team anywhere.
             <br/>
             If you are seeking someone who is willing to learn multiple languages, is skilled at handling project deliveries, that is exactly what I am prepared to do and what I am known to excel at.
             <br/>
-            I am well versed in Full Stack Javascript with React, Vue, Express, Node, Sequelize, MongoDB, Gulp and Webpack. I am fammiliar with Ruby on Rails, PHP and Python. I have extensive experience in Wordpress and have worked with headless CMS's like CosmicJS.
+            I am well versed in Full Stack JavaScript with React, Vue, Express, Node, Sequelize, MongoDB, Gulp and Webpack. I am fammiliar with Ruby on Rails, PHP and Python. I have extensive experience in WordPress and have worked with headless CMS's like CosmicJS.
           </h4>
         </GridItem>
       </GridContainer>
